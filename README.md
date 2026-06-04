@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/ItsVik03/meeting-reminder-win?style=flat-square&color=f9c74f)](https://github.com/ItsVik03/meeting-reminder-win/stargazers)
 
-[**Live Demo**](https://itsvikO3.github.io/meeting-reminder-win) · [**Report Bug**](https://github.com/ItsVik03/meeting-reminder-win/issues) · [**Request Feature**](https://github.com/ItsVik03/meeting-reminder-win/issues)
+[**Live Demo**](https://itsvik03.github.io/meeting-reminder-win) · [**Report Bug**](https://github.com/ItsVik03/meeting-reminder-win/issues) · [**Request Feature**](https://github.com/ItsVik03/meeting-reminder-win/issues)
 
 <br/>
 
