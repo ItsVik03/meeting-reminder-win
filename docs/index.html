@@ -1,10 +1,273 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meeting Reminder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MeetingReminder</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f1117;
+    color:#e5e7eb;
+    font-family:Segoe UI, sans-serif;
+    line-height:1.6;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:80px 0;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#9ca3af;
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:14px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.primary{
+    background:#7c3aed;
+    color:white;
+}
+
+.secondary{
+    border:1px solid #374151;
+    color:white;
+}
+
+.hero-images{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.hero-images img{
+    width:48%;
+    border-radius:16px;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#161b22;
+    border:1px solid #2d333b;
+    padding:25px;
+    border-radius:16px;
+}
+
+.demo{
+    background:#161b22;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
+.demo button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#7c3aed;
+    color:white;
+}
+
+#cat{
+    font-size:50px;
+    position:relative;
+    left:-100%;
+    transition:all 3s linear;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#9ca3af;
+}
+</style>
 </head>
+
 <body>
-    <h1>Meeting Reminder</h1>
-    <p>GitHub Pages is working.</p>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Never miss a meeting again.</h1>
+
+<p>
+The cutest meeting reminder you'll ever install.
+A cat flies across your screen before every meeting.
+</p>
+
+<div class="buttons">
+<a class="btn primary"
+href="https://github.com/ItsVik03/meeting-reminder-win">
+View on GitHub
+</a>
+
+<a class="btn secondary" href="#demo">
+Try Live Demo
+</a>
+</div>
+</div>
+
+<div class="hero-images">
+<img src="assets/cat_square.png">
+<img src="assets/screenshot-main.png">
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🐱 Flying Cat Alerts</h3>
+<p>Animated cat reminders before meetings.</p>
+</div>
+
+<div class="card">
+<h3>📅 Google Calendar</h3>
+<p>OAuth2 integration with Google Calendar.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Catppuccin Theme</h3>
+<p>Beautiful dark and light themes.</p>
+</div>
+
+<div class="card">
+<h3>⚡ System Tray</h3>
+<p>Runs quietly in the background.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="demo">
+
+<h2>Interactive Demo</h2>
+
+<div class="demo">
+
+<p style="margin-bottom:20px;">
+Click the button to trigger a reminder.
+</p>
+
+<div id="cat">🐱</div>
+
+<button onclick="flyCat()">
+Trigger Reminder
+</button>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Screenshots</h2>
+
+<div class="hero-images">
+<img src="assets/screenshot-main.png">
+<img src="assets/screenshot-settings.png">
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Roadmap</h2>
+
+<div class="cards">
+
+<div class="card">Multi-account calendar support</div>
+<div class="card">Custom cat themes</div>
+<div class="card">More reminder animations</div>
+<div class="card">Calendar analytics dashboard</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+Built by ItsVik03
+</footer>
+
+<script>
+function flyCat(){
+    const cat=document.getElementById('cat');
+
+    cat.style.transition='none';
+    cat.style.left='-100%';
+
+    setTimeout(()=>{
+        cat.style.transition='all 3s linear';
+        cat.style.left='100%';
+    },50);
+}
+</script>
+
 </body>
 </html>
+```
