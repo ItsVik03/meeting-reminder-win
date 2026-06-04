@@ -82,5 +82,5 @@ $RECYCLE.BIN/
 msix_temp/
 *.msix
 dist/
-MeetingReminder.App/Assets/*.png
-MeetingReminder.App/Assets/*.ico
+client_secrets.json
+**/client_secrets*.json
